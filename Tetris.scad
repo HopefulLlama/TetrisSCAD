@@ -1,7 +1,3 @@
-length = 20;
-cut = 2;
-offset = [0, 0, 0];
-
 module Block(l, c, o) {
     s = l - c;
     t = c / 2;
@@ -74,5 +70,3 @@ module TetrisT(l, c, o) {
     o3 = [o[0] + l, o[1] + l, o[2]];
     MultiBlock(l, c, [o, o1, o2, o3]);
 }
-
-//TetrisT(length, cut, offset);
